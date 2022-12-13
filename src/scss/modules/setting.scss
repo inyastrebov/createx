@@ -1,0 +1,39 @@
+html {
+	scroll-behavior: smooth;
+}
+
+$mw: max-width;
+
+// Colours
+
+$gray: #424551;
+$gray-b: #1E212C;
+$white: #fff;
+$gray-l: #787A80;
+$orange: #FF5A30;
+
+// Setting
+
+[class*="__container"] {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1260px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}

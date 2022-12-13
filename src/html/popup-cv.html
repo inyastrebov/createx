@@ -1,0 +1,58 @@
+<svg display="none">
+    <symbol id="down" viewBox="0 0 20 20">
+        <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4229 6.91083C16.7484 7.23626 16.7484 7.7639 16.4229 8.08934L10.5896 13.9227C10.2641 14.2481 9.73651 14.2481 9.41107 13.9227L3.57774 8.08934C3.2523 7.7639 3.2523 7.23626 3.57774 6.91083C3.90317 6.58539 4.43081 6.58539 4.75625 6.91083L10.0003 12.1549L15.2444 6.91083C15.5698 6.58539 16.0975 6.58539 16.4229 6.91083Z" fill="#424551"/>
+        </g>
+    </symbol>
+</svg>
+<section class="popup popup-cv">
+    <h2 class="visually-hidden">Contacts</h2>
+    <div class="popup__container">
+        <form class="popup__form contacts-form">
+            <a class="popup__close">
+                <span></span>
+            </a>
+            <h3 class="contacts-form__title">Subscribe to our newsletter</h3>
+            <label class="form-field form-field--gray contacts-form__field">
+                <span class="form-field__caption">Name*</span>
+                <input type="text" name="name" placeholder="Your name" class="form-field__input">
+            </label>
+            <div class="select popup__select">
+                <span class="form-field__caption select__caption">Location*</span>
+                <div class="select__header">
+                    <span class="select__current">New York</span>
+                    <div class="select__icon">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#down"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="select__body">
+                    <div class="select__item">New York</div>
+                    <div class="select__item">San Francisco</div>
+                    <div class="select__item">New Jersey</div>
+                </div>
+            </div>
+            <label class="form-field form-field--gray contacts-form__field">
+                <span class="form-field__caption">Phone*</span>
+                <input type="tel" name="phone" placeholder="Your phone number" class="form-field__input">
+            </label>
+            <label class="form-field form-field--gray contacts-form__field">
+                <span class="form-field__caption">Email*</span>
+                <input type="email" name="phone" placeholder="Your working email" class="form-field__input">
+            </label>
+            <label class="form-field form-field--gray contacts-form__field">
+                <span class="form-field__caption">Сovering letter</span>
+                <textarea name="message" placeholder="Your covering letter" class="form-field__input form-field__input--big"></textarea>
+            </label>
+            <label class="castom-file">
+                <input type="file" class="custom-checkbox__input">
+                <span class="custom-file__text">Attach your CV*</span>
+            </label>
+            <div class="centered">
+            <button class="contacts-form__btn btn btn--fill popup__btn" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/select.js"></script>
+</section>

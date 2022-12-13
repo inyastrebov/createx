@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html', {
+        "title": "How to Build",
+    })
+<body>
+    <svg display="none">
+        <symbol id="in" viewBox="0 0 24 24">
+            <g>
+                <path d="M18.3292 18.3333L18.3334 18.3326V12.2201C18.3334 9.22986 17.6896 6.92639 14.1938 6.92639C12.5132 6.92639 11.3854 7.84861 10.925 8.72292H10.8764V7.20555H7.56182V18.3326H11.0132V12.8229C11.0132 11.3722 11.2882 9.96944 13.0847 9.96944C14.8549 9.96944 14.8813 11.625 14.8813 12.916V18.3333H18.3292Z"/>
+                <path d="M1.94168 7.20625H5.39724V18.3333H1.94168V7.20625Z"/>
+                <path d="M3.66808 1.66666C2.56321 1.66666 1.66669 2.56319 1.66669 3.66805C1.66669 4.77291 2.56321 5.68819 3.66808 5.68819C4.77294 5.68819 5.66946 4.77291 5.66946 3.66805C5.66877 2.56319 4.77224 1.66666 3.66808 1.66666Z"/>
+            </g>
+        </symbol>
+        <symbol id="twit" viewBox="0 0 24 24">
+            <g>
+                <path d="M18.75 4.81041C18.1059 5.08369 17.4148 5.26902 16.6887 5.35176C17.4301 4.92663 17.9976 4.25232 18.2666 3.45129C17.5711 3.84499 16.8035 4.13086 15.9855 4.28583C15.3305 3.61675 14.3988 3.2 13.3653 3.2C11.3827 3.2 9.77523 4.73922 9.77523 6.63654C9.77523 6.90563 9.80694 7.16845 9.86819 7.41977C6.88501 7.2763 4.23973 5.90777 2.46928 3.82823C2.1598 4.33503 1.98374 4.92557 1.98374 5.55593C1.98374 6.74858 2.618 7.8009 3.58033 8.41657C2.992 8.39773 2.43866 8.24276 1.95423 7.98517V8.0281C1.95423 9.69297 3.19213 11.0824 4.83353 11.3987C4.5328 11.4762 4.21568 11.5191 3.88761 11.5191C3.6558 11.5191 3.43161 11.4971 3.2118 11.4552C3.66889 12.8217 4.99429 13.8154 6.56463 13.8426C5.33657 14.764 3.7881 15.3117 2.10624 15.3117C1.81646 15.3117 1.53103 15.2949 1.25 15.2645C2.83893 16.2415 4.7253 16.8111 6.75273 16.8111C13.3566 16.8111 16.9665 11.5736 16.9665 7.03131L16.9544 6.5863C17.6597 6.1046 18.2699 5.4994 18.75 4.81041Z"/>
+            </g>
+        </symbol>
+        <symbol id="face" viewBox="0 0 24 24">
+            <g>
+                <path d="M14.6357 0.83715L12.3214 0.833336C9.72122 0.833336 8.0409 2.60424 8.0409 5.34519V7.42546H5.71389C5.51281 7.42546 5.34998 7.59292 5.34998 7.79948V10.8136C5.34998 11.0201 5.51299 11.1874 5.71389 11.1874H8.0409V18.7928C8.0409 18.9994 8.20373 19.1667 8.40482 19.1667H11.4409C11.642 19.1667 11.8048 18.9992 11.8048 18.7928V11.1874H14.5256C14.7267 11.1874 14.8896 11.0201 14.8896 10.8136L14.8907 7.79948C14.8907 7.7003 14.8522 7.60532 14.7841 7.53513C14.716 7.46494 14.6231 7.42546 14.5266 7.42546H11.8048V5.66199C11.8048 4.8144 12.0014 4.38412 13.0763 4.38412L14.6354 4.38354C14.8363 4.38354 14.9991 4.21608 14.9991 4.00972V1.21098C14.9991 1.0048 14.8365 0.837532 14.6357 0.83715Z"/>
+            </g>
+        </symbol>
+    </svg>
+    @@include('html/header-1.html', {})
+    <section class="article">
+        <div class="article__container">
+            <div class="article__content">
+                <nav class="crum">
+                    <ul class="crum__list">
+                        <li class="crum__item"><a class="crum__link" href="index.html">Homepage</a></li>
+                        <li class="crum__item"><a class="crum__link" href="news.html">News</a></li>
+                        <li class="crum__item"><a class="crum__link" href="article.html">How to Build Climate Change-Resilient Infrastructure</a></li>
+                    </ul>
+                </nav>
+                <h1 class="article__title">How to Build Climate Change-Resilient Infrastructure</h1>
+            </div>
+            <div class="article__meta">
+                <div class="article-meta">
+                    <a href="#" class="article-meta__item">Industry News</a>
+                    <time class="article-meta__item" datetime="2020-06-24 19:00">June 24, 2020</time>
+                    <span class="article-meta__item article-meta__item--comments">4 comments</span>
+                </div>
+                <div class="article__social">
+                    <a href="#" target="_blank" class="article__link" aria-label="linked in">
+                        <svg>
+                            <use xlink:href="#in"></use>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" class="article__link" aria-label="twitter">
+                        <svg>
+                            <use xlink:href="#twit"></use>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" class="article__link" aria-label="facebook">
+                        <svg>
+                            <use xlink:href="#face"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="content__container">
+            <img class="content__banner" src="img/article-page/image.jpg" alt="banner">
+            <div class="content__position">
+                <div class="content__info">
+                    <p class="content__descr content__descr--bold">
+                        Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac&nbsp;euismod.
+                    </p>
+                    <p class="content__descr content__descr">
+                        At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.
+    
+                        Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.
+                    </p>
+                    <p class="content__descr content__descr--bold content__quot">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu&nbsp;sed purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non. Congue tortor in&nbsp;tot euismod vulputate etiam eros. Vel accumsan at&nbsp;elit neque, ipsum.
+                    </p>
+                    <p class="content__descr">
+                        Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque amet non fringilla blandit:
+                    </p>
+                    <ul class="content__list">
+                        <li class="content__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+                        <li class="content__item">Vulputate placerat amet pulvinar lorem nisl.</li>
+                        <li class="content__item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                        <li class="content__item">Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                    </ul>
+                    <p class="content__descr">
+                        Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.
+                    </p>
+                    <div class="article__social article__social--padd">
+                        <span>Share:</span>
+                        <a href="#" target="_blank" class="article__link" aria-label="linked in">
+                            <svg>
+                                <use xlink:href="#in"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="article__link" aria-label="twitter">
+                            <svg>
+                                <use xlink:href="#twit"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="article__link" aria-label="facebook">
+                            <svg>
+                                <use xlink:href="#face"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content__comments comments">
+                    <h2 class="title title--center">4 comments</h2>
+                    <ul class="comments__list">
+                        <li class="comments__item">
+                            <div class="comments__info">
+                                <span class="comments__data">Devon Lane</span>
+                                <time class="comments__data" datetime="2020-07-15 19:00">July 15, 2020</time>
+                            </div>
+                            <div class="comments__body">
+                                <div class="comments__descr">
+                                    Phasellus varius faucibus ultrices odio in. Massa neque dictum natoque ornare rutrum malesuada et phasellus. Viverra natoque nulla cras vel nisl proin senectus. Tortor sed eleifend ante tristique felis sed urna aliquet. Suspendisse fames egestas sed duis purus diam et.
+                                </div>
+                                <a href="#" class="comments__link">Reply</a>
+                            </div>
+                        </li>
+                        <li class="comments__item">
+                            <div class="comments__info">
+                                <span class="comments__data">Annette Black</span>
+                                <time class="comments__data" datetime="2020-07-15 19:00">1 day ago</time>
+                            </div>
+                            <div class="comments__body">
+                                <div class="comments__descr">
+                                    <a href="#">@Devon Lane</a> Egestas fermentum natoque sollicitudin mauris. Facilisis praesent urna sed rhoncus quis pharetra pellentesque erat sagittis.
+                                </div>
+                                <a href="#" class="comments__link">Reply</a>
+                            </div>
+                        </li>
+                        <li class="comments__item">
+                            <div class="comments__info">
+                                <span class="comments__data">Albert Flores</span>
+                                <time class="comments__data" datetime="2020-07-15 19:00">July 7, 2020</time>
+                            </div>
+                            <div class="comments__body">
+                                <div class="comments__descr">
+                                    Libero commodo sit dui ac proin. Penatibus ultricies at adipiscing mauris nunc. Fames faucibus nisl duis id diam.
+                                </div>
+                                <a href="#" class="comments__link">Reply</a>
+                            </div>
+                        </li>
+                        <li class="comments__item">
+                            <div class="comments__info">
+                                <span class="comments__data">Marvin McKinney</span>
+                                <time class="comments__data" datetime="2020-07-15 19:00">June 28, 2020</time>
+                            </div>
+                            <div class="comments__body">
+                                <div class="comments__descr">
+                                    Ullamcorper nibh sed ac ipsum nunc imperdiet rhoncus. Quam donec habitant nibh sit consequat erat libero, tincidunt. Eros ut aliquam proin et duis. Mauris, egestas congue nibh dui a nulla.
+                                </div>
+                                <a href="#" class="comments__link">Reply</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form-comments">
+                    <h2 class="title title--center">Leave your comment</h2>
+                    <form action="#" class="form-comments__block">
+                        <div class="form-comments__content">
+                            <div class="form-comments__person">
+                                <label class="form-comments__field form-field">
+                                    <span class="form-field__caption">Name*</span>
+                                    <input class="form-field__input" type="text" placeholder="Your name">
+                                </label>
+                                <label class="form-comments__field form-field">
+                                    <span class="form-field__caption">Email*</span>
+                                    <input class="form-field__input" type="tel" placeholder="Your working email">
+                                </label>
+                            </div>
+                            <label class="form-comments__field form-field form-field--big">
+                                <span class="form-field__caption">Your comment*</span>
+                                <textarea class="form-field__input" type="text" placeholder="Type comment here"></textarea>
+                            </label>
+                            <div class="centered">
+                                <button class="btn form-comments__btn btn--fill" type="submit">Post comment</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('html/contacts.html', {})
+    @@include('html/footer.html', {})
+    <script src="js/swiper.min.js"></script>
+    <script src="js/sliders.js"></script>
+</body>
+</html>

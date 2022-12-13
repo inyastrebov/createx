@@ -1,0 +1,21 @@
+// Импорт общих стилей
+@import "modules/null";
+@import "fonts";
+@import "modules/setting";
+@import "modules/header";
+@import "modules/form";
+
+// Импорт стилей для страниц
+@import "main";
+@import "services";
+@import "services-item";
+@import "our-work";
+@import "work-card";
+@import "about-us";
+@import "available";
+@import "news";
+@import "article";
+@import "contacts";
+
+// Импорт общих стилей
+@import "modules/footer";

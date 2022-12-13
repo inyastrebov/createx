@@ -1,0 +1,306 @@
+//---------- available ----------//
+
+.available {
+    padding: 152px 0 146px 0;
+    background-color: #F4F5F6;
+    background-image: url('../img/about_us/available/bg.png');
+    background-position: bottom 0 right -200px;
+    background-repeat: no-repeat;
+
+    &__content {
+        max-width: 600px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 130%;
+        letter-spacing: 1px;
+        color: $gray-b;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+
+        @media ($mw: 576px) {
+            font-size: 56px;
+        }
+    }
+
+    &__descr {
+        font-size: 20px;
+        line-height: 150%;
+        color: $gray-l;
+    }
+
+    @media ($mw: 768px) {
+        background-image: none;
+    }
+}
+
+//---------- job ----------//
+
+.job {
+    padding-top: 120px;
+    padding-bottom: 180px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @media ($mw: 1024px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__list {
+        @media ($mw: 1024px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        padding: 32px 40px;
+        background: $white;
+        border: 1px solid #E5E8ED;
+        border-radius: 4px;
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow:
+                0 80px 80px -20px rgba(154, 156, 165, 0.08),
+                0 30px 24px -10px rgba(154, 156, 165, 0.05),
+                0 12px 10px -6px rgba(154, 156, 165, 0.04),
+                0 4px 4px -4px rgba(30, 33, 44, 0.03);
+        }
+
+        @media ($mw: 1024px) {
+            justify-content: space-between;
+        }
+
+        @media ($mw: 576px) {
+            flex-direction: column;
+        }
+    }
+
+    &__about {
+        margin-right: 40px;
+        width: 434px;
+
+        @media ($mw: 768px) {
+            margin-right: 0;
+        }
+
+        @media ($mw: 576px) {
+            margin-bottom: 24px;
+            width: 100%;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: $gray-b;
+    }
+
+    &__btn {
+        padding: 0 32px;
+        font-size: 14px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.5px;
+
+        @media ($mw: 576px) {
+            justify-content: center;
+        }
+    }
+}
+
+.data {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 150%;
+    color: $gray-l;
+
+    &__address {
+        position: relative;
+        margin-right: 24px;
+        padding-left: 24px;
+        font-style: normal;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: $gray-l;
+            width: 1px;
+            height: 12px;
+            top: 3px;
+            right: -12px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../img/about_us/available/geo.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+            top: 2px;
+            left: 0;
+        }
+    }
+
+    &__work-hour {
+        position: relative;
+        padding-left: 24px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../img/about_us/available/Clock.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+            top: 2px;
+            left: 0;
+        }
+    }
+}
+
+.not-finde {
+    max-width: 390px;
+
+    &__title {
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 150%;
+        color: $gray-b;
+    }
+
+    &__descr {
+        margin-bottom: 48px;
+        font-size: 18px;
+        line-height: 150%;
+        color: #424551;
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+
+        button {
+            font-size: 16px;
+            line-height: 52px;
+            letter-spacing: 0.5px;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+
+                @media ($mw: 576px) {
+                    margin-right: 0;
+                    margin-bottom: 24px;
+                }
+            }
+
+            &:first-child {
+                padding: 0 44px;
+            }
+
+            &:last-child {
+                padding: 0 50px;
+            }
+        }
+
+        @media ($mw: 576px) {
+            flex-direction: column;
+        }
+    }
+}
+
+//---------- job-benefits ----------//
+
+.job-benefits {
+    padding-bottom: 180px;
+    background-color: $white;
+
+    &__list {
+        --mission-gap: 94px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: calc(var(--mission-gap) * 2);
+
+        @media ($mw: 768px) {
+        --mission-gap: 24px;
+        }
+
+        @media ($mw: 576px) {
+            display: block;
+        }
+    }
+    &__item {
+        position: relative;
+        padding-top: 71px;
+        text-align: center;
+        background-position: top center;
+        background-size: 48px 48px ;
+        background-repeat: no-repeat;
+
+        &:not(:last-child) {
+            &:after {
+                content: "";
+                position: absolute;
+                right: calc(-1 * var(--mission-gap));
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background-image: url(../img/mission/line.svg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            @media ($mw: 576px) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    &__subtittle {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: $gray-b;
+    }
+    &__descr {
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: $gray-l;
+    }
+    &__item--quality {
+        background-image: url('../img/about_us/available/ic-brain.svg');
+    }
+    &__item--safety {
+        background-image: url('../img/about_us/available/ic-success.svg');
+    }
+    &__item--comfort {
+        background-image: url('../img/about_us/available/ic-budget.svg');
+    }
+}
+
+//---------- map ----------//
+
